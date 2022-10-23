@@ -1,0 +1,53 @@
+.navBar {
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.nav-item {
+    width: 200px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.personal-main {
+    
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.perosnal_chart {
+    width: 500px;
+    padding-right: 50px;
+}
+
+.greeting {
+    font-size: 36px;
+    padding-left: 50px;
+}
+
+.greeting h3 {
+    margin: 0px;
+}
+
+.divider {
+    background-color: #2B0504;
+    height: 10px;
+    width: 500px;
+}
+
+.personal-description {
+    padding-left: 50px;
+}
+
+.personal-description h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2B0504;
+}
+
