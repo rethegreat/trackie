@@ -1,0 +1,31 @@
+.page {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.welcome-design{
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+    
+}
+
+.red-line{
+    height: 200px;
+    width: 5px;
+    margin-right: 50px;
+    background-color: #F4442E;
+}
+
+.welcome-title {
+    font-size: 42px;
+    margin: 0px;
+    width: 600px;
+}
+
+.get-started-button {
+    align-self: flex-end;
+    padding-top: 50px;
+}

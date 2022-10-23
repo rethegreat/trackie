@@ -1,0 +1,20 @@
+
+
+.next-page-button {
+    width: 360px;
+    height: 100px;
+    background-color: #4C6085;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.button-title {
+    width: 300px;
+    height: 60px;
+    padding-left: 50px;
+    color: #F7F3E3;
+    font-size: 48px;
+    font-weight: bold;
+    align-content: center;
+}
