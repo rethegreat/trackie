@@ -14,21 +14,21 @@
 }
 
 .personal-main {
-    
-    height: 500px;
+    padding-top: 50px;
+    height: 600px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .perosnal_chart {
-    width: 500px;
+    width: 600px;
     padding-right: 50px;
+    padding-top: 50PX;
 }
 
 .greeting {
     font-size: 36px;
-    padding-left: 50px;
 }
 
 .greeting h3 {
@@ -42,7 +42,7 @@
 }
 
 .personal-description {
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .personal-description h3 {
