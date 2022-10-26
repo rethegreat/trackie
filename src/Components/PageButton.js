@@ -1,6 +1,6 @@
-import './NextPageButton.css'
+import './PageButton.css'
 
-function NextPageButton(props){
+function PageButton(props){
     return(
         <div className="next-page-button">
             <div className='button-title'>
@@ -10,4 +10,4 @@ function NextPageButton(props){
     )
 }
 
-export default NextPageButton
+export default PageButton

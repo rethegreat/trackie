@@ -7,14 +7,19 @@
 
 
 .nav-item {
-    width: 200px;
+    padding-right: 50px;
     padding-top: 50px;
     font-weight: bold;
     font-size: 32px;
 }
 
+.selected{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+
 .personal-main {
-    padding-top: 50px;
     height: 600px;
     display: flex;
     flex-direction: row;
@@ -41,9 +46,6 @@
     width: 500px;
 }
 
-.personal-description {
-    padding-left: 30px;
-}
 
 .personal-description h3 {
     font-size: 36px;
@@ -51,3 +53,9 @@
     color: #2B0504;
 }
 
+.left-flexbox{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
