@@ -6,7 +6,7 @@
 
 .left-flexbox{
     padding-left: 30px;
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,5 +23,11 @@
 .divider {
     background-color: #2B0504;
     height: 10px;
-    width: 500px;
+    width: 450px;
+}
+
+.sub-total {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
 }

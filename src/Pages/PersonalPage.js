@@ -13,6 +13,12 @@ function PersonalPage() {
     { title: "Climbing", value: 20, color: "#F4442E" },
   ];
 
+  const totalSpending = 2192.01;
+
+  const greetingText = "Good morning, Boaz"
+
+  const descriptionText = "your spending in October is";
+
   //Add this from database later
   const spendingCategory = [
     {
@@ -44,7 +50,7 @@ function PersonalPage() {
     spendingCategory[0].content
   );
 
-  function changeTitle (index){
+  function changeTitle(index) {
     setSelected(index === selected ? undefined : index);
     setTitleDisplayed(spendingCategory[index].title);
     setContentDisplayed(spendingCategory[index].content);
@@ -52,10 +58,21 @@ function PersonalPage() {
 
   return (
     <div>
-      <NavBar />
+      <NavBar Personal={true} Shared={false}/>
       <div className="personal-main">
-        <BreakDownText contentDisplayed={contentDisplayed} titleDisplayed={titleDisplayed}/>
-        <SpendingPieChart changeTitle={changeTitle} spendingData={spendingData} selected={selected}/>
+        <BreakDownText
+          greetingText={greetingText}
+          contentDisplayed={contentDisplayed}
+          titleDisplayed={titleDisplayed}
+          totalSpending={totalSpending}
+          descriptionText={descriptionText}
+          buttonTitle='Add spending'
+        />
+        <SpendingPieChart
+          changeTitle={changeTitle}
+          spendingData={spendingData}
+          selected={selected}
+        />
       </div>
     </div>
   );

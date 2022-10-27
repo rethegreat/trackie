@@ -5,6 +5,8 @@ import { RedBrown } from "../Color"
 
 
 function WelcomePage(){
+
+
     return(
         <div className="page">
             
@@ -15,7 +17,7 @@ function WelcomePage(){
                 </h1>
             </div>
             <div className="get-started-button">
-                <NextPageButton title='Get Started'/>
+                <NextPageButton title='Get Started' to='/personal'/>
             </div>
             
             

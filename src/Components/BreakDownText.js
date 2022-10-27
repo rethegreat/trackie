@@ -8,9 +8,9 @@ function BreakDownText(props){
         <div className="left-flexbox">
           <div className="personal-description">
             <div className="greeting">
-              <h3>Good Morning, Boaz</h3>
-              <h3>your spending in October is</h3>
-              <h3>$2192.01</h3>
+              <h3>{props.greetingText}</h3>
+              <h3>{props.descriptionText}</h3>
+              <h3>${props.totalSpending}</h3>
             </div>
             <div className="divider"></div>
             <h3>{props.titleDisplayed}</h3>
@@ -20,7 +20,11 @@ function BreakDownText(props){
               </p>
             ))}
           </div>
-          <PageButton title="Add Spending" />
+          <div>
+            <p className="sub-total">{props.titleDisplayed} total : $1241</p>
+            <PageButton title={props.buttonTitle} />
+          </div>
+          
         </div>
     </div>
     )
