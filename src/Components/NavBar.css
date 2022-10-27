@@ -1,0 +1,19 @@
+.navBar {
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    padding-right: 50px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.selected{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}

@@ -1,23 +1,4 @@
-.navBar {
-    height: max-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
 
-
-.nav-item {
-    padding-right: 50px;
-    padding-top: 50px;
-    font-weight: bold;
-    font-size: 32px;
-}
-
-.selected{
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 3px;
-}
 
 .personal-main {
     height: 600px;
@@ -26,36 +7,9 @@
     justify-content: space-around;
 }
 
-.perosnal_chart {
-    width: 600px;
-    padding-right: 50px;
-    padding-top: 50PX;
-}
-
-.greeting {
-    font-size: 36px;
-}
-
-.greeting h3 {
-    margin: 0px;
-}
-
-.divider {
-    background-color: #2B0504;
-    height: 10px;
-    width: 500px;
-}
 
 
-.personal-description h3 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #2B0504;
-}
 
-.left-flexbox{
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
+
+

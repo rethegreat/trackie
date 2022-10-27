@@ -1,8 +1,9 @@
 import "./PersonalPage.css";
-import { PieChart } from "react-minimal-pie-chart";
 
 import React, { useState } from "react";
-import PageButton from "../Components/PageButton";
+import BreakDownText from "../Components/BreakDownText";
+import SpendingPieChart from "../Components/SpendingPieChart";
+import NavBar from "../Components/NavBar";
 
 function PersonalPage() {
   const spendingData = [
@@ -43,7 +44,7 @@ function PersonalPage() {
     spendingCategory[0].content
   );
 
-  function changeTitle(index) {
+  function changeTitle (index){
     setSelected(index === selected ? undefined : index);
     setTitleDisplayed(spendingCategory[index].title);
     setContentDisplayed(spendingCategory[index].content);
@@ -51,45 +52,11 @@ function PersonalPage() {
 
   return (
     <div>
-      <div className="navBar">
-        <div className="nav-item selected">Personal</div>
-        <div className="nav-item">Shared</div>
-        <div className="nav-item">Settings</div>
-      </div>
+      <NavBar />
       <div className="personal-main">
-        <div className="left-flexbox">
-          <div className="personal-description">
-            <div className="greeting">
-              <h3>Good Morning, Boaz</h3>
-              <h3>your spending in October is</h3>
-              <h3>$2192.01</h3>
-            </div>
-            <div className="divider"></div>
-            <h3>{titleDisplayed}</h3>
-            {contentDisplayed.map((content) => (
-              <p>
-                {content.date}: {content.title} ${content.amount}
-              </p>
-            ))}
-          </div>
-          <PageButton title="Add Spending" />
-        </div>
-        <PieChart
-          className="perosnal_chart"
-          data={spendingData}
-          lineWidth={30}
-          radius={43}
-          paddingAngle={5}
-          animate
-          segmentsStyle={{ transition: "stroke .3s", cursor: "pointer" }}
-          segmentsShift={(index) => (index === selected ? 6 : 1)}
-          onClick={(event, index) => {
-            console.log("CLICK", { event, index });
-            changeTitle(index);
-          }}
-        />
+        <BreakDownText contentDisplayed={contentDisplayed} titleDisplayed={titleDisplayed}/>
+        <SpendingPieChart changeTitle={changeTitle} spendingData={spendingData} selected={selected}/>
       </div>
-      ;
     </div>
   );
 }
