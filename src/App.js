@@ -1,6 +1,7 @@
 import WelcomePage from './Pages/WelcomePage';
 import PersonalPage from './Pages/PersonalPage';
 import SharedPage from './Pages/SharedPage';
+import SpendingForm from './Pages/SpendingForm';
 
 import {
   BrowserRouter as Router,
@@ -15,6 +16,7 @@ function App() {
         <Route path="/trackie" element={<WelcomePage />} />
         <Route path="/personal" element={<PersonalPage />} />
         <Route path="/shared" element={<SharedPage />} />
+        <Route path="/spendingForm" element={<SpendingForm />} />
       </Routes>
     </Router>
   );

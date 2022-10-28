@@ -1,0 +1,35 @@
+.form-flexbox {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+}
+
+.form-flexbox h1{
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.answerBox {
+    height: 100px;
+    width: 700px;
+    padding-left: 15px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    outline: none;
+}
+
+.icon {
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-bottom: 50px;
+}
+
+
+.nextButton {
+    padding-top: 50px;
+    padding-left: 400px;
+}

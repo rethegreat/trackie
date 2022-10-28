@@ -22,7 +22,7 @@ function BreakDownText(props){
           </div>
           <div>
             <p className="sub-total">{props.titleDisplayed} total : $1241</p>
-            <PageButton title={props.buttonTitle} />
+            <PageButton title={props.buttonTitle} to='/spendingForm'/>
           </div>
           
         </div>
