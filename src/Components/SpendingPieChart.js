@@ -3,6 +3,7 @@ import "./SpendingPieChart.css";
 
 function SpendingPieChart(props){
     return(
+      <div className="pie">
         <PieChart
           className="perosnal_chart"
           data={props.spendingData}
@@ -16,6 +17,8 @@ function SpendingPieChart(props){
             props.changeTitle(index);
           }}
         />
+        <h1 className="pie-label">$129.12</h1>
+      </div>
     )
 }
 
