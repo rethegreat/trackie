@@ -1,0 +1,16 @@
+.pie {
+    position: relative;
+    width: 600px;
+}
+
+.perosnal_chart {
+    padding-top: 50PX;
+}
+
+.pie-label {
+    position: absolute;
+    top: 310px;
+    left: 235px;
+
+    font-size: 40px;
+}
