@@ -1,4 +1,5 @@
 {
+  "proxy": "http://localhost:8080",
   "homepage": "http://rethegreat.github.io/trackie",
   "name": "trackie",
   "version": "0.1.0",

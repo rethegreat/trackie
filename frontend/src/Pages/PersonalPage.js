@@ -1,6 +1,6 @@
 import "./PersonalPage.css";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BreakDownText from "../Components/BreakDownText";
 import SpendingPieChart from "../Components/SpendingPieChart";
 import NavBar from "../Components/NavBar";
@@ -70,6 +70,21 @@ function PersonalPage() {
     setContentDisplayed(spendingCategory[index].content);
   }
 
+  const [workouts, setWorkout] = useState(null)
+
+  useEffect(() => {
+    const fetchWorkouts = async () => {
+      const response = await fetch('/api/workouts')
+      const json = await response.json()
+
+      if (response.ok){
+        setWorkout(json)
+      }
+    }
+
+    fetchWorkouts()
+  }, [])
+
   return (
     <div>
       <NavBar Personal={true} Shared={false}/>
@@ -90,6 +105,14 @@ function PersonalPage() {
         />
       </div>
     </div>
+
+
+    // Fetching api
+    // <div>
+    //   {workouts && workouts.map((workout) => (
+    //     <p key={workout._id}>{workout.title}</p>
+    //   ))}
+    // </div>
   );
 }
 
