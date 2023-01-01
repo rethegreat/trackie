@@ -14,10 +14,10 @@ const workoutSchema = new Schema(
     },
     load: {
       type: Number,
-      requiredL: true,
+      required: true,
     },
   },
-  { timestamps: true }
+  { timestamps: true}
 );
 
 module.exports = mongoose.model('Workout', workoutSchema)
