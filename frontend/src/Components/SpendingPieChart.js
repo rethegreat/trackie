@@ -23,7 +23,10 @@ function SpendingPieChart(props){
             props.changeTitle(index);
           }}
         />
-        <h1 className="pie-label">${label}</h1>
+        <div className="label-container">
+          <h1>${label}</h1>
+        </div>
+        
       </div>
     )
 }

@@ -70,19 +70,19 @@ function PersonalPage() {
     setContentDisplayed(spendingCategory[index].content);
   }
 
-  const [workouts, setWorkout] = useState(null)
+  const [spending, setSpending] = useState(null)
 
   useEffect(() => {
-    const fetchWorkouts = async () => {
-      const response = await fetch('/api/workouts')
+    const fetchSpending = async () => {
+      const response = await fetch('/api/spending')
       const json = await response.json()
 
       if (response.ok){
-        setWorkout(json)
+        setSpending(json)
       }
     }
 
-    fetchWorkouts()
+    fetchSpending()
   }, [])
 
   return (
@@ -91,7 +91,7 @@ function PersonalPage() {
       <div className="personal-main">
         <BreakDownText
           greetingText={greetingText}
-          contentDisplayed={contentDisplayed}
+          contentDisplayed={spending}
           titleDisplayed={titleDisplayed}
           totalSpending={totalSpending}
           descriptionText={descriptionText}
@@ -109,8 +109,8 @@ function PersonalPage() {
 
     // Fetching api
     // <div>
-    //   {workouts && workouts.map((workout) => (
-    //     <p key={workout._id}>{workout.title}</p>
+    //   {spending && spending.map((spending) => (
+    //     <p key={spending._id}>{spending.description}</p>
     //   ))}
     // </div>
   );
