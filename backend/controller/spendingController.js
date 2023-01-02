@@ -27,10 +27,10 @@ const getSpending = async (req, res) => {
 
 // create a spending
 const createSpending = async (req, res) => {
-  const { title, description, amount, userID } = req.body;
+  const { title, amount, category, userID} = req.body;
 
   try {
-    const spending = await Spending.create({ title, description, amount, userID });
+    const spending = await Spending.create({ title, amount, category, userID});
     res.status(200).json(spending);
   } catch (error) {
     res.status(400).json({ error: error.message });

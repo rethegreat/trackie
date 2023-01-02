@@ -33,3 +33,13 @@
     padding-top: 50px;
     padding-left: 400px;
 }
+
+.categorySelection {
+    width: 725px;
+}
+
+.inputError {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 0px;
+}

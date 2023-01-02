@@ -8,13 +8,13 @@ const spendingSchema = new Schema(
       type: String,
       required: true,
     },
-    description: {
-      type: String,
-      required: true,
-    },
     amount: {
       type: Number,
       required: true,
+    },
+    category: {
+      type: String, 
+      required: true
     },
     userID: {
       type: String,

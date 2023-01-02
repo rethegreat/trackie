@@ -2,42 +2,79 @@ import PageButton from "../Components/PageButton";
 import "./SpendingForm.css";
 import { BsCheckLg } from "react-icons/bs";
 import React, { useState } from "react";
+import Select from "react-select";
 
 function SpendingForm() {
-  const q1 = "From where?";
-  const q2 = "How much?";
+  const questions = ["From where?", "How much?", "Which category?"];
 
-  const [q1Completed, setQ1Completed] = useState(false);
+  const categoryOptions = [
+    { value: "Climbing", label: "Climbing" },
+    { value: "Rent", label: "Rent" },
+    { value: "Entertainment", label: "Entertainment" },
+    { value: "Food", label: "Food" },
+  ];
+
+  // Place holder for userID
+  const userID = "0123456789";
+
+  const [curQuestion, setCurQuestion] = useState(0);
 
   const [FormCompleted, setFormCompleted] = useState(false);
 
   const [result, setResult] = useState("");
 
-  const [fromWhere, setFromWhere] = useState("");
+  const [title, setTitle] = useState("");
 
-  const [cost, setCost] = useState("");
+  const [amount, setAmount] = useState(0);
 
-  const [error, setError] = useState(null);
+  const [category, setCategory] = useState("");
+
+  const [error, setError] = useState("");
+
+  const customStyles = {
+    control: (base) => ({
+      ...base,
+      height: 60,
+      minHeight: 60,
+    }),
+  };
 
   function nextQuestion() {
-    if (q1Completed === false) {
-      setQ1Completed(true);
-      setFromWhere(result);
+    if (result === "" && category === ""){
+      setError("Enter required field")
+      return 
+    }
+    if (curQuestion === 0) {
+      setCurQuestion((curQuestion) => curQuestion + 1);
+      setTitle(result);
+    } else if (curQuestion < 2) {
+      if (isNaN(parseFloat(result))){
+        setError("Please enter a value")
+        return
+      }else {
+        setCurQuestion((curQuestion) => curQuestion + 1);
+        setAmount(parseFloat(result));
+      }
+      
     } else {
-      setCost(result);
       setFormCompleted(true);
     }
     setResult("");
+    setError("");
+  }
+
+  function handleCategoryChange(selectedOption) {
+    setCategory(selectedOption.value);
   }
 
   async function handleSubmit(e) {
     e.preventDefault();
 
-    const spenidngResult = { fromWhere, cost };
+    const spendingResult = { title, category, amount, userID };
 
-    const response = await fetch("/api/workouts", {
+    const response = await fetch("/api/spending", {
       method: "POST",
-      body: JSON.stringify(spenidngResult),
+      body: JSON.stringify(spendingResult),
       headers: {
         "Content-Type": "application/json",
       },
@@ -45,12 +82,13 @@ function SpendingForm() {
 
     const json = await response.json();
 
+    
+
     if (!response.ok) {
-      setError(json.error);
+      console.log(response)
     } else {
-      setFromWhere("");
-      setCost("");
-      setError(null);
+      setTitle("");
+      setAmount("");
       console.log("spending added", json);
     }
   }
@@ -66,25 +104,35 @@ function SpendingForm() {
 
           <div className="nextButton">
             <PageButton
-              title={FormCompleted ? "Great!" : "Next"}
-              onClick={nextQuestion}
-              to={FormCompleted ? "/personal" : ""}
+              title={"Great!"}
+              onClick={handleSubmit}
+              to={"/personal"}
             />
           </div>
         </div>
       ) : (
         <div>
           <div>
-            <h1>{q1Completed ? q2 : q1}</h1>
-            <input
-              className="answerBox"
-              type="Your answer"
-              value={result}
-              onChange={(e) => setResult(e.target.value)}
-            />
+            <h1>{questions[curQuestion]}</h1>
+            {curQuestion === 2 ? (
+              <Select
+                className="categorySelection"
+                styles={customStyles}
+                options={categoryOptions}
+                onChange={handleCategoryChange}
+              />
+            ) : (
+              <input
+                className="answerBox"
+                type="Your answer"
+                value={result}
+                onChange={(e) => setResult(e.target.value)}
+              />
+            )}
           </div>
+          <p className="inputError">{error}</p>
           <div className="nextButton">
-          <PageButton title={"Next"} onClick={nextQuestion} />
+            <PageButton title={"Next"} onClick={nextQuestion} />
           </div>
         </div>
       )}
