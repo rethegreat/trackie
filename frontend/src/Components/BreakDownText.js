@@ -2,6 +2,9 @@ import PageButton from "../Components/PageButton";
 import "./BreakDownText.css";
 
 function BreakDownText(props) {
+
+  
+
   return (
     <div>
       <div className="left-flexbox">
