@@ -7,6 +7,7 @@ function PageButton(props) {
       <Link
         className="button-title"
         to={props.to}
+        refresh="true"
       >
         {props.title}
       </Link>

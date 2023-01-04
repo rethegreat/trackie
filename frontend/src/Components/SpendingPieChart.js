@@ -24,7 +24,7 @@ function SpendingPieChart(props){
           }}
         />
         <div className="label-container">
-          <h1>${label}</h1>
+          <h1>${Math.round(label * 100) / 100}</h1>
         </div>
         
       </div>
