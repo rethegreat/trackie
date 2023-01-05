@@ -2,23 +2,22 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const workoutSchema = new Schema(
+const sharedSpendingSchema = new Schema(
   {
     title: {
       type: String,
       required: true,
     },
-    reps: {
+    amount: {
       type: Number,
       required: true,
     },
-    load: {
-      type: Number,
+    userID: {
+      type: String,
       required: true,
     },
   },
-  { timestamps: true}
+  { timestamps: true }
 );
 
-module.exports = mongoose.model('Workout', workoutSchema)
-
+module.exports = mongoose.model("sharedSpending", sharedSpendingSchema);

@@ -1,9 +1,9 @@
-require("dotenv").config();
+require("dotenv").config()
 
-const express = require("express");
-const mongoose = require("mongoose");
-const workoutRoutes = require("./routes/workoutRoutes");
+const express = require("express")
+const mongoose = require("mongoose")
 const spendingRoutes = require("./routes/spendingRoutes")
+const sharedSpendingRoutes = require("./routes/sharedSpendingRoutes")
 
 // Creates react app
 const app = express();
@@ -17,8 +17,8 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use("/api/workouts", workoutRoutes)
 app.use("/api/spending", spendingRoutes)
+app.use("/api/sharedSpending", sharedSpendingRoutes)
 
 // Conect to mongoose
 mongoose.set("strictQuery", false);

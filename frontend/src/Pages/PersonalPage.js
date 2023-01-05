@@ -8,7 +8,7 @@ import NavBar from "../Components/NavBar";
 function PersonalPage() {
   const greetingText = "Good morning, Boaz"
 
-  const descriptionText = "your spending in October is";
+  
 
   const [selected, setSelected] = useState(0);
   const [selectedSpending, setSelectedSpending] = useState(null);
@@ -89,7 +89,7 @@ function PersonalPage() {
       { title: "Food", value: foodValue, color: "#BC5F04"},
       { title: "Climbing", value: climbingValue, color: "#F4442E"},
     ])
-  }, [rentValue])
+  }, [rentValue, entertainmentValue, foodValue, climbingValue])
 
   return (
     <div>
@@ -100,7 +100,6 @@ function PersonalPage() {
           contentDisplayed={selectedSpending}
           titleDisplayed={titleDisplayed}
           totalSpending={totalSpending}
-          descriptionText={descriptionText}
           selectedTotal={selectedTotal}
           buttonTitle='Add spending'
         />

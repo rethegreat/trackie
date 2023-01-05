@@ -13,13 +13,13 @@ const getSpending = async (req, res) => {
   const { id } = req.params;
 
   if (!mongoose.Types.ObjectId.isValid(id)) {
-    return res.status(404).json({ error: "No such workout" });
+    return res.status(404).json({ error: "spending ID invalid" });
   }
 
   const spending = await Spending.findById(id);
 
-  if (!workout) {
-    return res.status(404).json({ error: "No such workout" });
+  if (!spending) {
+    return res.status(404).json({ error: "No such spending found" });
   }
 
   res.status(200).json(spending);

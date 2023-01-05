@@ -72,7 +72,7 @@ function SharedPage() {
       <div className="shared-main">
         <BreakDownText
           greetingText={greetingText}
-          contentDisplayed={contentDisplayed}
+          // contentDisplayed={contentDisplayed}
           titleDisplayed={titleDisplayed}
           totalSpending={totalSpending}
           descriptionText={descriptionText}
