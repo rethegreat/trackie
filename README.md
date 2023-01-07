@@ -26,7 +26,7 @@ A shared page to track spending between you and your designated friends. So you 
 An account an authentication system
 
 
-Since this project is still in development to run the project
+## Since this project is still in development to run the project
 
 ## Available Scripts
 
