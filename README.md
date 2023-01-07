@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Trackie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Trackie! This app is designed to help you keep track of your spending habits and make informed decisions about your finances.
+
+Features:
+
+  Add and categorize expenses
+  View and analyze your spending over time in different categories
+  
+To get started:
+
+  Enter your expenses by clicking on the "Add Spending" button
+  Name the title of that spending
+  Select a category and enter the amount spent
+  
+You can view and analyze your spending by:
+
+  Visiting the "Personal" tab to see a breakdown of your expenses by category
+  
+  
+This is still a work in the process:
+
+Features that are coming soon ~ 
+A shared page to track spending between you and your designated friends. So you could keep a overview on who is paying for what
+
+An account an authentication system
+
+
+Since this project is still in development to run the project
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the front-end project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode in the front end
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In the backend-end project directory, you can run:
 
-### `npm test`
+### `npm start dev`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the sever in development mode
 
-### `npm run build`
+##Framework
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Trackie is built with a MERN stack, which stands for MongoDB, Express.js, React, and Node.js.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+MongoDB is a noSQL database used for storing the data for the app.
+Express.js is a back-end web application framework that runs on the server and handles the backend logic of the app.
+React is a front-end JavaScript library used for building user interfaces and handling the front-end logic of the app.
+Node.js is a JavaScript runtime that allows the app to run on the server and execute the code written in JavaScript.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The MERN stack allows for a full-stack JavaScript development, making it easier for developers to build and maintain the app.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
