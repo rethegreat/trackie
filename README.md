@@ -25,7 +25,7 @@ A shared page to track spending between you and your designated friends. So you 
 
 An account an authentication system
 
-![banner]([https://i.postimg.cc/wvNjq4Jk/blob-even-smaller.png](https://cdn.discordapp.com/attachments/910736549581324318/1061104942095552623/Screen_Shot_2023-01-06_at_9.03.48_PM.png])
+![banner](https://i.postimg.cc/wvNjq4Jk/blob-even-smaller.png](https://cdn.discordapp.com/attachments/910736549581324318/1061104942095552623/Screen_Shot_2023-01-06_at_9.03.48_PM.png)
 
 
 ## Since this project is still in development to run the project
