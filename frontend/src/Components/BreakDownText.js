@@ -9,7 +9,7 @@ function BreakDownText(props) {
           <div className="greeting">
             <h3>{props.greetingText}</h3>
             <h3>
-              Your spending in 
+              Your spending in&nbsp;
               {new Date().toLocaleString("en-US", { month: "long" })} is
             </h3>
             <h3>${Math.round(props.totalSpending * 100) / 100}</h3>

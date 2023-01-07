@@ -16,6 +16,10 @@ const sharedSpendingSchema = new Schema(
       type: String,
       required: true,
     },
+    sharedWithUserID: {
+      type: [String],
+      required: true
+    }
   },
   { timestamps: true }
 );

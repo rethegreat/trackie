@@ -8,8 +8,6 @@ import NavBar from "../Components/NavBar";
 function PersonalPage() {
   const greetingText = "Good morning, Boaz"
 
-  
-
   const [selected, setSelected] = useState(0);
   const [selectedSpending, setSelectedSpending] = useState(null);
   const [selectedTotal, setSelectedTotal] = useState(0);
@@ -27,7 +25,6 @@ function PersonalPage() {
   const [climbingValue, setClimbingValue] = useState(0)
   const [foodValue, setFoodValue] = useState(0)
   const [entertainmentValue, setEntertainmentValue] = useState(0)
-
 
   function changeTitle(index) {
     setSelected(index === selected ? undefined : index);
@@ -68,8 +65,6 @@ function PersonalPage() {
     if (dataMounted){
       setSelectedSpending(spending.filter(object => object.category === titleDisplayed))
     } 
-
-    
   }, [titleDisplayed, spending, dataMounted])
 
   useEffect(() => {
@@ -79,8 +74,6 @@ function PersonalPage() {
       }, 0))
     }
   }, [selectedSpending])
-
-  
 
   useEffect(() => {
     setPieData([

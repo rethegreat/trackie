@@ -27,10 +27,10 @@ const getSharedSpending = async (req, res) => {
 
 // create a spending
 const createSharedSpending = async (req, res) => {
-  const { title, amount, userID} = req.body;
+  const { title, amount, userID, sharedWithUserID} = req.body;
 
   try {
-    const sharedSpending = await SharedSpending.create({ title, amount, userID});
+    const sharedSpending = await SharedSpending.create({ title, amount, userID, sharedWithUserID});
     res.status(200).json(sharedSpending);
   } catch (error) {
     res.status(400).json({ error: error.message });
