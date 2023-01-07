@@ -1,5 +1,7 @@
 # Trackie
 
+![banner](https://cdn.discordapp.com/attachments/910736549581324318/1061104942095552623/Screen_Shot_2023-01-06_at_9.03.48_PM.png)
+
 Welcome to the Trackie! This app is designed to help you keep track of your spending habits and make informed decisions about your finances.
 
 Features:
@@ -24,9 +26,6 @@ Features that are coming soon ~
 A shared page to track spending between you and your designated friends. So you could keep a overview on who is paying for what
 
 An account an authentication system
-
-![banner](https://cdn.discordapp.com/attachments/910736549581324318/1061104942095552623/Screen_Shot_2023-01-06_at_9.03.48_PM.png)
-
 
 ## Since this project is still in development to run the project
 
