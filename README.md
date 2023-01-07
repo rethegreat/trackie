@@ -43,7 +43,7 @@ In the backend-end project directory, you can run:
 
 Runs the sever in development mode
 
-##Framework
+## Framework
 
 Trackie is built with a MERN stack, which stands for MongoDB, Express.js, React, and Node.js.
 
