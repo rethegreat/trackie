@@ -1,5 +1,6 @@
 import PageButton from "../Components/PageButton";
 import "./BreakDownText.css";
+import React from "react";
 
 function BreakDownText(props) {
   return (

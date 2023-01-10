@@ -2,6 +2,7 @@ import NextPageButton from "../Components/PageButton"
 import './WelcomePage.css'
 import '../Color.js'
 import { RedBrown } from "../Color"
+import React from "react";
 
 
 function WelcomePage(){

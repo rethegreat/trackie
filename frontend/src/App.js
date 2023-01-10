@@ -2,6 +2,7 @@ import WelcomePage from './Pages/WelcomePage';
 import PersonalPage from './Pages/PersonalPage';
 import SharedPage from './Pages/SharedPage';
 import SpendingForm from './Pages/SpendingForm';
+import React from "react";
 
 import {
   BrowserRouter as Router,

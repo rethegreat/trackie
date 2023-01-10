@@ -1,5 +1,6 @@
 import { PieChart } from "react-minimal-pie-chart";
 import "./SpendingPieChart.css";
+import React from "react";
 
 function SpendingPieChart(props){
 
