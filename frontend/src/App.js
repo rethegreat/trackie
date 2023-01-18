@@ -9,15 +9,17 @@ import {
   Routes,
   Route
  } from "react-router-dom";
+import LoginPage from './Pages/LoginPage';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/trackie" element={<WelcomePage />} />
+        <Route path="/" element={<WelcomePage />} />
         <Route path="/personal" element={<PersonalPage />} />
         <Route path="/shared" element={<SharedPage />} />
         <Route path="/spendingForm" element={<SpendingForm />} />
+        <Route path="/login" element={<LoginPage/>} />
       </Routes>
     </Router>
   );

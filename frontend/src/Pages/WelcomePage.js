@@ -6,8 +6,6 @@ import React from "react";
 
 
 function WelcomePage(){
-
-
     return(
         <div className="page">
             
@@ -18,10 +16,8 @@ function WelcomePage(){
                 </h1>
             </div>
             <div className="get-started-button">
-                <NextPageButton title='Get Started' to='/personal'/>
+                <NextPageButton title='Get Started' to='/login'/>
             </div>
-            
-            
         </div>
     )
 }

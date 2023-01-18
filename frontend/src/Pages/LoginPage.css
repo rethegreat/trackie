@@ -1,0 +1,44 @@
+.login-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+
+    background-color: white;
+    
+}
+
+.shopping-image {
+    width: 50vw;
+    height: 100vh;
+    object-fit:cover;
+
+    border-radius: 20px;
+}
+
+.left-login {
+    padding-left: 10vw;
+
+    width: 30vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.right-login {
+    
+
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+}
