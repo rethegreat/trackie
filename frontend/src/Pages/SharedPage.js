@@ -56,14 +56,14 @@ function SharedPage() {
 
   const [selected, setSelected] = useState(0);
   const [titleDisplayed, setTitleDisplayed] = useState("Boaz");
-  const [contentDisplayed, setContentDisplayed] = useState(
-    spendingCategory[0].content
-  );
+  // const [contentDisplayed, setContentDisplayed] = useState(
+  //   spendingCategory[0].content
+  // );
 
   function changeTitle(index) {
     setSelected(index === selected ? undefined : index);
     setTitleDisplayed(spendingCategory[index].title);
-    setContentDisplayed(spendingCategory[index].content);
+    // setContentDisplayed(spendingCategory[index].content);
   }
 
   return (
