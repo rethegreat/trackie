@@ -4,6 +4,7 @@ const express = require("express")
 const mongoose = require("mongoose")
 const spendingRoutes = require("./routes/spendingRoutes")
 const sharedSpendingRoutes = require("./routes/sharedSpendingRoutes")
+const userRoutes = require("./routes/userRoutes")
 
 // Creates react app
 const app = express();
@@ -19,6 +20,7 @@ app.use((req, res, next) => {
 // Routes
 app.use("/api/spending", spendingRoutes)
 app.use("/api/sharedSpending", sharedSpendingRoutes)
+app.use("/api/user", userRoutes)
 
 // Conect to mongoose
 mongoose.set("strictQuery", false);

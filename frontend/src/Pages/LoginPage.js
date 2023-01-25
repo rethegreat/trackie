@@ -12,6 +12,11 @@ function LoginPage() {
     setAction("Create Account");
   }
 
+  
+
+
+
+
   return (
     <div>
       <div className="logo">
@@ -22,14 +27,18 @@ function LoginPage() {
         <div className="left-login">
           <div>
             <h1 className="title">{action}</h1>
-            {action === "Sign In" && (
+            {action === "Sign In" ? 
               <div className="signup">
                 <div>New User?</div>
                 <div className="create-account" onClick={signUp}>
                   Create Account
                 </div>
               </div>
-            )}
+              :
+              <div>
+                Start tracking your financies together
+              </div>
+            }
           </div>
 
           <input
@@ -50,7 +59,6 @@ function LoginPage() {
             <div className="login-button">{action}</div>
           </Link>
 
-          <div></div>
         </div>
 
         <div className="right-login">

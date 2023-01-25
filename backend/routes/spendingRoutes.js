@@ -15,7 +15,7 @@ router.get('/', getSpendings)
 // GET a single Spending
 router.get('/:id', getSpending)
 
-// POST a single workout
+// POST a single Spending
 router.post('/', createSpending)
 
 

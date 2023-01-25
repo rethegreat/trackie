@@ -8,7 +8,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    hashedPassword: {
+    hash: {
       type: String,
       required: true,
     },
@@ -16,6 +16,10 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    name: {
+      type: String,
+      required: true,
+    }
   }
 );
 
