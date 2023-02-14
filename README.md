@@ -26,6 +26,7 @@ Features that are coming soon ~
 A shared page to track spending between you and your designated friends. So you could keep a overview on who is paying for what
 
 An account an authentication system
+![banner](https://media.discordapp.net/attachments/910736549581324318/1070550168883183636/Screen_Shot_2023-02-01_at_10.41.57_PM.png)
 
 ## Since this project is still in development to run the project
 
