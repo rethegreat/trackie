@@ -12,10 +12,6 @@ function LoginPage() {
     setAction("Create Account");
   }
 
-  
-
-
-
 
   return (
     <div>

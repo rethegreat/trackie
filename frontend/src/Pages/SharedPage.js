@@ -67,25 +67,31 @@ function SharedPage() {
   }
 
   return (
+    // <div>
+    //   <NavBar Personal={false} Shared={true} />
+    //   <div className="shared-main">
+    //     <BreakDownText
+    //       greetingText={greetingText}
+    //       // contentDisplayed={contentDisplayed}
+    //       titleDisplayed={titleDisplayed}
+    //       totalSpending={totalSpending}
+    //       descriptionText={descriptionText}
+    //       buttonTitle='Add contribution'
+    //     />
+    //     <SpendingPieChart
+    //       changeTitle={changeTitle}
+    //       spendingData={spendingData}
+    //       selected={selected}
+    //       pieLabel={categoryTotal[selected]}
+    //     />
+    //   </div>
+    // </div>
+
     <div>
       <NavBar Personal={false} Shared={true} />
-      <div className="shared-main">
-        <BreakDownText
-          greetingText={greetingText}
-          // contentDisplayed={contentDisplayed}
-          titleDisplayed={titleDisplayed}
-          totalSpending={totalSpending}
-          descriptionText={descriptionText}
-          buttonTitle='Add contribution'
-        />
-        <SpendingPieChart
-          changeTitle={changeTitle}
-          spendingData={spendingData}
-          selected={selected}
-          pieLabel={categoryTotal[selected]}
-        />
-      </div>
+      <h1>Coming Soon</h1>
     </div>
+    
   );
 }
 
